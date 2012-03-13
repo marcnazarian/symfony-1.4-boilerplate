@@ -1,30 +1,21 @@
 Symfony 1.4 boilerplate
 -----------------------
 
-Unit tests with PHPUnit
+This project is a Symfony skeleton with 
+- one app (named frontend),
+- one action/template (index) that display a list of forum messages
+- one model (Forum) with fake messages (static messages, no database required)
 
-Functional tests with Behat2 and Mink
+The purpose of this boilerplate is to provide a full *test* environment
+for those who want to start with Symfony 1.4:
+- Unit tests with PHPUnit
+- Functional tests with Behat2 and Mink
 
 
 
+* how to run unit test
+    phpunit --configuration=test/configuration.xml --bootstrap=test/bootstrap/unit.php test/
 
-
-
-GIT commands
-git fetch origin master
-git fetch --tags
-git pull --rebase origin master
-git push -u origin master
-git push --tags
-
-GIT REPOS
-git submodule update --init
-
-story 1: symfony skeleton
-
-story 2: how to run unit test
-phpunit --configuration=test/configuration.xml --bootstrap=test/bootstrap/unit.php test/
-
-story 3: how to run (failing) functional test
-cd test/bdd/
-behat homepage.feature
+* how to run (failing) functional test
+    cd test/bdd/
+    behat homepage.feature
