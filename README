@@ -1,5 +1,4 @@
-Symfony 1.4 boilerplate
------------------------
+# Symfony 1.4 boilerplate
 
 This project is a Symfony skeleton with 
 - one app (named frontend),
@@ -13,9 +12,11 @@ for those who want to start with Symfony 1.4:
 
 
 
-* how to run unit test
+1. how to run unit test
+
     phpunit --configuration=test/configuration.xml --bootstrap=test/bootstrap/unit.php test/
 
-* how to run (failing) functional test
+2. how to run (failing) functional test
+
     cd test/bdd/
     behat homepage.feature
