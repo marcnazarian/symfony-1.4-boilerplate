@@ -4,6 +4,6 @@
 
 <ul>
 <?php foreach($messages as $message): ?>
-    <li><?php echo $message ?></li>
+    <li class="message"><?php echo $message ?></li>
 <?php endforeach; ?>
 </ul>
