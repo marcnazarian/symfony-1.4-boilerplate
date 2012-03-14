@@ -5,10 +5,10 @@
 	<!-- PROJECT DESCRIPTION SECTION -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.agilegrenoble.2011</groupId>
-  <artifactId>bestofForum</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>bestofForum</name>
-  <description>web application bestofForum for agileGrenoble 2011</description>
+  <artifactId>symfony-1.4-boilerplate</artifactId>
+  <version>0.2-SNAPSHOT</version>
+  <name>symfony-1.4-boilerplate</name>
+  <description>symfony 1.4 web application boilerplate for testing all components</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,8 +51,8 @@
             <configuration>
               <executable>behat</executable>
               <arguments>
-                <argument>--no-colors</argument>
-                <argument>test/bdd/</argument>
+                <argument>--config=test/bdd/behat.yml</argument>
+                <argument>test/bdd/features</argument>
               </arguments>
             </configuration>
           </execution>
