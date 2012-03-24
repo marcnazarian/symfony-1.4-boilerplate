@@ -21,13 +21,13 @@ class forumTest extends PHPUnit_Framework_TestCase {
       $forumTable = $this->getMock('ForumTable', array('getAllMessages'), array(), '', false);
       $forumTable->expects($this->once())
                  ->method('getAllMessages')
-                 ->will($this->returnValue(array('message1', 'message2')));
+                 ->will($this->returnValue(array('this is the first message', 'this is the second message')));
       
       $forum = $this->getMock('Forum', array('getForumTable'), array(), '', false);
       $forum->expects($this->once())
             ->method('getForumTable')
             ->will($this->returnValue($forumTable));
-      $this->assertGreaterThan(0, count($forum->getMessages()));
+      $this->assertEquals(array('this is the first message', 'this is the second message'), $forum->getMessages());
   }
   
 }

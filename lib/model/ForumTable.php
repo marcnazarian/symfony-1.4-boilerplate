@@ -14,7 +14,7 @@ class ForumTable {
     }
     
     public function getAllMessages() {
-        return array('message 1', 'message 2');
+        return array('message 1', 'message 2', 'message 3');
     }
     
 }
