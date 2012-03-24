@@ -3,7 +3,7 @@
 <h2>Messages</h2>
 
 <ul>
-<?php foreach($messages as $message): ?>
-    <li class="message"><?php echo $message ?></li>
+<?php foreach($forumMessages as $forumMessage): ?>
+    <li class="message"><?php echo $forumMessage->getMessage() ?></li>
 <?php endforeach; ?>
 </ul>

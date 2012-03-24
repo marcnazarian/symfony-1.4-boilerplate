@@ -1,0 +1,5 @@
+ForumMessage:
+  actAs: { Timestampable: ~ }
+  columns:
+    message: { type: string(255), notnull: true }
+ 
