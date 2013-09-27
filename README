@@ -10,7 +10,7 @@ for those who want to start with Symfony 1.4:
 - Unit tests with PHPUnit
 - Functional tests with Behat2 and Mink
 
-
+# How-tos
 
 1. how to run unit test
 
@@ -24,3 +24,8 @@ for those who want to start with Symfony 1.4:
 3. how to run all the test suite (maven required)
 
     mvn clean test
+    
+    
+# License
+
+This boilerplate is distributed under the GPL license: http://www.gnu.org/licenses/gpl.html
